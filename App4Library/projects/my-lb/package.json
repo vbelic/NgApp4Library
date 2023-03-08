@@ -1,0 +1,15 @@
+{
+  "name": "my-lb",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^13.3.0",
+    "@angular/core": "^13.3.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "ng-lib-utils": "^1.0.7",
+    "ngx-uglifier": "^1.0.3"
+  }
+}
