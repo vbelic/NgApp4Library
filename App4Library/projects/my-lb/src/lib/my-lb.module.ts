@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
-import { MyLbComponent } from './my-lb.component';
+import { MyLbComponent } from './components/my-lb/my-lb.component';
+import { MyLbcComponent } from './components/my-lbc/my-lbc.component';
 
 
 
 @NgModule({
   declarations: [
-    MyLbComponent
+    MyLbComponent,
+    MyLbcComponent
   ],
   imports: [
   ],
   exports: [
-    MyLbComponent
+    MyLbComponent,
+    MyLbcComponent
   ]
 })
 export class MyLbModule { }

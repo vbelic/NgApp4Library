@@ -3,5 +3,6 @@
  */
 
 export * from './lib/my-lb.service';
-export * from './lib/my-lb.component';
+export * from './lib/components/my-lb/my-lb.component';
+export * from './lib/components/my-lbc/my-lbc.component';
 export * from './lib/my-lb.module';
