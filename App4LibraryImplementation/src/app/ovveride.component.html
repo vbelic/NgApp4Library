@@ -1,0 +1,31 @@
+
+<h2>Example 1:</h2>
+
+<useful-generic>
+	<h1>Hello from inside default wrapper</h1>
+	<button (click)="buttonClick()">Click me!</button>
+</useful-generic>
+
+
+<h2>Example 2:</h2>
+
+<useful-generic>
+	<h1>Hello from inside my wrapper</h1>
+	<button (click)="buttonClick()">Click me!</button>
+
+	<ng-template #wrapper let-content>
+		<div class="my-very-own-wrapper">
+			<ng-container *ngTemplateOutlet="content"></ng-container>
+		</div>
+	</ng-template>
+</useful-generic>
+
+<h2>Example 3:</h2>
+
+<ng-template #sharkTemplate>
+    <div>
+        <h1>Hello from inside my wrapper</h1>
+        <button (click)="buttonClick()">Click me!</button>
+    </div>
+</ng-template>
+<app-generic [optionTemplate]="sharkTemplate"></app-generic>
