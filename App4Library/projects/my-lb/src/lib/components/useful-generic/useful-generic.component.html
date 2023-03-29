@@ -1,0 +1,11 @@
+<ng-container *ngTemplateOutlet="wrapper; context: {$implicit: body}"></ng-container>
+
+<ng-template #body>
+  <ng-content></ng-content>
+</ng-template>
+
+<ng-template #defaultWrapper let-content>
+  <div class="default-wrapper">
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </div>
+</ng-template>
